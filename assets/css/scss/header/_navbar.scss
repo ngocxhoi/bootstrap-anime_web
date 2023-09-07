@@ -1,0 +1,124 @@
+header {
+  height: 80px;
+  background-color: $--bg-color;
+
+  nav {
+    height: inherit;
+
+    .container {
+      height: inherit;
+      
+      .navbar-brand {
+        font-size: 2.4rem;
+        color: #fff;
+      }
+
+      .navbar-nav {
+        height: 100%;
+
+        .nav-item {
+          margin: 0 1rem;
+          height: 100%;
+          width: 90px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          position: relative;
+          &.active {
+            background-color: red;
+          }
+          &:hover {
+            background-color: red;
+          }
+  
+          .nav-link {
+            color: $--text-color;
+      
+            &:hover {
+              color: #fff;
+            }
+          }
+
+          .categories-list {
+            position: absolute;
+            width: 160px;
+            background-color: #ddd;
+            top: 80px;
+            left: 0;
+            z-index: -1;
+            border-radius: 1rem;
+            transform: translateY(14px);
+            opacity: 0;
+
+            li {
+              margin: .5rem 0;
+              &:hover {
+                margin-left: .5rem;
+              }
+              a {
+                color: $--bg-color;
+                text-decoration: none;
+              }
+            }
+          }
+
+          &:hover .categories-list {
+            transform: translateY(0);
+            opacity: 1;
+            z-index: 10;
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+
+    input {
+      height: 30px;
+    }
+    
+    a {
+      svg {
+        height: 30px;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.offcanvas {
+
+  .offcanvas-header {
+    
+    h1 {
+      color: #333;
+    }
+  }
+
+  .offcanvas-body {
+    
+    .navbar-nav {
+      
+      .nav-item {
+
+        .nav-link {
+          color: #333;
+        }
+      }
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      button {
+        width: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Jquery -->
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">AniHi</a>
+      <ul class="navbar-nav d-md-flex d-none">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Homepage</a>
+        </li>
+        <li class="nav-item categories">
+          <a class="nav-link" href="#">Categories</a>
+          <ul class="categories-list">
+            <li>
+              <a href="#">Categories</a>
+            </li>
+            <li>
+              <a href="#">Anime Details</a>
+            </li>
+            <li>
+              <a href="#">Anime Watching</a>
+            </li>
+            <li>
+              <a href="#">Blog Details</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-md-flex d-none">
+        <input class="form-control d-lg-block d-none" type="text" placeholder="Search">
+        <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="#ddd"
+              stroke-miterlimit="10" stroke-width="32" />
+            <path fill="none" stroke="#ddd" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+              d="M338.29 338.29L448 448" />
+          </svg>
+        </a>
+        <a href="./page/login.html" class="user-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none"
+              stroke="#ddd" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+            <path
+              d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z"
+              fill="none" stroke="#ddd" stroke-miterlimit="10" stroke-width="32" />
+          </svg>
+        </a>
+      </form>
+
+      <button class="d-md-none" data-bs-toggle="offcanvas" data-bs-target="#left-bar">
+        <span class="navbar-toggler-icon bg-white"></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-start" id="left-bar">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">AniHi</h1>
+      <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Homepage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form>
+        <input class="form-control" type="text" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<body>
+
+  <section id="normal-breadcrumb">
+    <div class="container">
+      <h1>Login</h1>
+      <h2>Welcome to the official Anime blog.</h2>
+    </div>
+  </section>
+
+  <section class="login-section">
+    <div class="row">
+      <div class="col-lg-6 col-12 pe-lg-5 pe-0 justify-content-lg-end box-login">
+        <div class="box-container">
+          <h1>Login</h1>
+          <div class="box-email">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+              <rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                d="M112 160l144 112 144-112" />
+            </svg>
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="box-password">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+              <path d="M336 208v-95a80 80 0 00-160 0v95" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="32" />
+              <rect x="96" y="208" width="320" height="272" rx="48" ry="48" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+            </svg>
+            <input type="password" placeholder="Password">
+          </div>
+          <div class="box-login-button">
+            <button class="btn btn-danger">Login</button>
+            <a>Forgot your password?</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 ps-lg-5 ps-0 toggle-change">
+        <div class="container align-items-lg-start align-items-center">
+          <h1 class="d-lg-block d-none">Don't Have An Account?</h1>
+          <button class="btn btn-danger register-btn">Register Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row sign-with">
+      <span>OR</span>
+      <button class="sign-with-g">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+          <path
+            d="M473.16 221.48l-2.26-9.59H262.46v88.22H387c-12.93 61.4-72.93 93.72-121.94 93.72-35.66 0-73.25-15-98.13-39.11a140.08 140.08 0 01-41.8-98.88c0-37.16 16.7-74.33 41-98.78s61-38.13 97.49-38.13c41.79 0 71.74 22.19 82.94 32.31l62.69-62.36C390.86 72.72 340.34 32 261.6 32c-60.75 0-119 23.27-161.58 65.71C58 139.5 36.25 199.93 36.25 256s20.58 113.48 61.3 155.6c43.51 44.92 105.13 68.4 168.58 68.4 57.73 0 112.45-22.62 151.45-63.66 38.34-40.4 58.17-96.3 58.17-154.9 0-24.67-2.48-39.32-2.59-39.96z" />
+        </svg>
+        SIGN IN WITH GOOGLE</button>
+      <button class="sign-with-f">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
+          </path>
+        </svg>
+        SIGN IN WITH FACEBOOK</button>
+      <button class="sign-with-t">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+          <path
+            d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z" />
+        </svg>
+        SIGN IN WITH TWITTER</button>
+    </div>
+  </section>
+
+</body>
+
+<footer>
+
+  <a href="#normal-breadcrumb" class="page-up">
+    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+        d="M112 328l144-144 144 144" />
+    </svg>
+  </a>
+  <div class="container d-lg-flex">
+    <div class="col-lg-3 col-12 d-lg-block d-flex justify-content-center footer-logo">
+      <a href="#">AniHI</a>
+    </div>
+    <div class="col-lg-6 col-12 footer-nav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Homepage</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Our Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-12 d-lg-block d-flex footer-about-us">
+      Copyright ©2023 All rights reserved | This template is made with by
+      <a href="#">Colorilib</a>
+    </div>
+  </div>
+
+</footer>
+
+</html>

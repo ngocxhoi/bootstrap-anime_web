@@ -1,0 +1,53 @@
+$--bg-color: #0b0c2a;
+$--bg-color2: #1d1e39;
+$--text-color: #ddd;
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #c9c9c9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all .4s ease;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+section {
+  background-color: $--bg-color;
+}
+
+@import "scss/header/navbar";
+
+@import "scss/body/introduce";
+@import "scss/body/product";
+
+@import "scss/footer/footer";
+
+// Page
+
+@import "page-css/login-page";
+@import "page-css/anime-details";
+@import "page-css/categories";
+@import "page-css/anime-watching";
+
+// Responsive
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 40%;
+  }
+}

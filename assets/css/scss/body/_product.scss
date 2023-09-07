@@ -1,0 +1,11 @@
+.product {
+  min-height: 100vh;
+  padding-top: 4rem;
+
+  .col-8 > div {
+    margin-bottom: 4rem;
+  }
+}
+@import 'product/trending-now';
+@import 'product/product-slidebar-view';
+@import 'product/product-slidebar-comment';

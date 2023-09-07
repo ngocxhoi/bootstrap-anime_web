@@ -1,0 +1,20 @@
+.row-current-pagination {
+  display: flex;
+  margin: 4rem 0 6rem;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.current-page {
+      border: 1px solid #fff;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.introduce {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .container {
+    position: relative;
+    
+    #owl-demo {
+      
+      .item img{
+        display: block;
+        max-height: 90vh;
+        margin: 5vh 0;
+        object-fit: cover;
+      }
+    }
+
+    .owl-nav {
+      height: 0;
+
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        box-shadow: 0 0 6px $--bg-color;
+
+        &:first-child {
+          left: 0;
+        }
+        &:last-child {
+          right: 0;
+        }
+      }
+    }
+
+    .owl-dots {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .owl-box-info {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      margin: 0 0 14rem 6rem;
+
+      .adventure {
+        height: 3rem;
+        width: 10rem;
+        border-radius: .4rem;
+        background-color: #fff;
+        color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .owl-anime-name {
+        margin: 2rem 0;
+
+        .anime-name {
+          font-size: 6rem;
+          font-weight: 700;
+          color: #fff;
+        }
+
+        .owl-anime-title {
+          color: #fff;
+          font-weight: 400;
+        }
+      }
+      
+
+      .btn-watching {
+        height: 5rem;
+        width: 18rem;
+        border: none;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        margin-right: 2px;  
+        background-color: rgb(249, 56, 56); 
+        border-radius: 1rem;
+      }
+      .btn-watching1 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .btn-watching2 {
+        width: 4rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+
+}
+

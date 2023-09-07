@@ -1,0 +1,156 @@
+#normal-breadcrumb {
+  background: url(/assets/img/normal-breadcrumb.jpg.webp) no-repeat center;
+  height: 300px;
+
+  .container {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.login-section {
+  min-height: 110vh;
+  padding-top: 8rem;
+
+  .row {
+    height: 40%;
+    width: 100%;
+    margin-bottom: 4rem;
+
+    .box-login {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      .box-container {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          margin-bottom: 2rem;
+          color: #fff;
+          font-weight: 700;
+        }
+
+        .box-email {
+          position: relative;
+          margin: 1rem 0;
+
+          svg {
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            transform: translateY(-50%);
+          }
+
+          input {
+            padding: .6rem 2rem .6rem 4rem;
+            width: 40rem;
+            outline: none;
+            color: #333;
+          }
+        }
+        
+        .box-password {
+          @extend .box-email;
+        }
+
+        .box-login-button {
+          width: 40rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 1rem 0;
+
+          button {
+            width: 8rem;
+            height: 4rem;
+            font-size: 2rem;
+            border-radius: 0;
+          }
+        }
+      }
+
+    }
+
+    .toggle-change {
+      border-left: 1px solid #fff;
+      margin-bottom: 2rem;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          margin-bottom: 2rem;
+          color: #fff;
+          font-weight: 700;
+        }
+        button {
+          width: 18rem;
+          height: 4rem;
+          font-size: 2rem;
+          border-radius: 0;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+
+  .sign-with {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 60%;
+
+    span {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      width: 44rem;
+      height: 5rem;
+      margin: .5rem 0;
+      border: none;
+      color: #fff;
+      position: relative;
+
+      &.sign-with-g {
+        background-color: #ff4343;
+      }
+      &.sign-with-f {
+        background-color: #4267b2;
+      }
+      &.sign-with-t {
+        background-color: #1da1f2;
+      }
+
+      svg {
+        position: absolute;
+        left: 3rem;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 24px;
+        
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+
